@@ -1,0 +1,12 @@
+.alternate-color:nth-child(odd){
+    background-color: red;
+}
+
+.alternate-color:nth-child(even){
+    background-color: blue;
+}
+
+.alternate-color{
+    height: 10em;
+    width: 100%;
+}

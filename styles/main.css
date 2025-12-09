@@ -1,1 +1,14 @@
+@import url("./reset.css");
 
+@import url("./theme.css");
+@import url("./footer.css");
+@import url("./header.css");
+@import url("./utils.css");
+
+
+
+main{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
