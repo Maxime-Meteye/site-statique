@@ -1,10 +1,24 @@
 header{
     background-color: #152237;
     height: 80px;
-    padding: 5em 26px;
+    padding: 1em 26px;
+	display: flex;
+	flex-direction: row;
+}
+header > * {
+	width: 100%;
+	display: flex;
+}
+
+header > * > * {
+	align-self: center;
 }
 
 .logo{
     width: 84px;
     height: 31px;
+}
+
+.hamburger-menu{
+	justify-content: right;
 }

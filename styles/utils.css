@@ -17,6 +17,9 @@
     grid-template-rows: repeat(auto-fill 1fr);
 }
 
+.line-through{
+	text-decoration: line-through;
+}
 
 
 .hidden-on-mobile{

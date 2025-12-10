@@ -1,5 +1,5 @@
 @import url("./reset.css");
-
+@import url("./vars.css");
 @import url("./theme.css");
 @import url("./footer.css");
 @import url("./header.css");
@@ -13,9 +13,63 @@ main{
     flex-direction: column;
 }
 
+.bg-header{
+	background: linear-gradient(to left,#44dd89aa,#2DCAB688,#15b6e2aa), no-repeat url("../assets/bg-header.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 2em;
+}
+
+
 .course-list{
     display: flex;
     flex-direction: column;
     padding: 2em;
 }
 
+.course-list > li{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.course-list > li > *{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.course-illustration{
+	display: block;
+	position: relative;
+	width: 305px;
+	height: 9.5em;
+	margin-bottom: 2em;
+	background-color: #44dd8a;
+}
+
+.course-illustration > .price-container{
+	position: absolute;
+	bottom: -9%;
+	right: 1%;
+}
+
+.price-container{
+	display: flex;
+	justify-content: right;
+}
+
+.course-price{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	margin-right: 2em;
+	gap: 0.5em;
+	color: #FFF;
+	width: fit-content;
+	padding: 5px;
+	border-radius: 1em;
+	background-color: var(--dark-blue);
+	box-shadow: 2px 3px 6px 1px rgb(82, 82, 82);
+}
