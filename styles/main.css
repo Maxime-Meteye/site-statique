@@ -12,3 +12,10 @@ main{
     width: 100vw;
     flex-direction: column;
 }
+
+.course-list{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+

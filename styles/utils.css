@@ -10,3 +10,15 @@
     height: 10em;
     width: 100%;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill 1fr);
+}
+
+
+
+.hidden-on-mobile{
+    display: none;
+}
