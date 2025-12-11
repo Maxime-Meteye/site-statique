@@ -22,22 +22,14 @@ main{
 
 
 .course-list{
-    display: flex;
-    flex-direction: column;
     padding: 2em;
+	row-gap: 3em;
+	column-gap: 2em;
 }
 
 .course-list > li{
 	display: flex;
 	flex-direction: column;
-}
-
-
-.course-list > li > *{
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	width: 100%;
 }
 
 .course-illustration{
@@ -72,4 +64,8 @@ main{
 	border-radius: 1em;
 	background-color: var(--dark-blue);
 	box-shadow: 2px 3px 6px 1px rgb(82, 82, 82);
+}
+
+.course-descriptor > :is(p,strong){
+	text-align: justify;
 }
