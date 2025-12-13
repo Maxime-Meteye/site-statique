@@ -14,18 +14,24 @@
 .btn{
 	padding: 0.5em 1.5em;
 	border-radius: 6px;
-	background-color: var(--dark-blue);
-	color: white;
+	border-color: transparent;
 }
 
 .padding-block{
 	padding-block: 3em;
+}
+.padding-inline{
+	padding-inline: 3em;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+}
+
+.flex{
+	display: flex;
 }
 
 .line-through{
@@ -43,12 +49,29 @@
 .center-x{
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .margin-auto{
 	margin: auto;
 }
 
+
+.note-1{
+	--note-level : 1;
+}
+.note-2{
+	--note-level : 2;
+}
+.note-3{
+	--note-level : 3;
+}
+.note-4{
+	--note-level : 4;
+}
+.note-5{
+	--note-level : 5;
+}
 
 [class*="note"]{
 	position: relative;
@@ -65,18 +88,6 @@
 	height: 1em;
 }
 
-.note-1{
-	--note-level : 1;
-}
-.note-2{
-	--note-level : 2;
-}
-.note-3{
-	--note-level : 3;
-}
-.note-4{
-	--note-level : 4;
-}
-.note-5{
-	--note-level : 5;
+.no-shadow{
+	box-shadow: none !important;
 }

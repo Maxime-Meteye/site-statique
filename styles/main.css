@@ -30,6 +30,7 @@ main{
 .course-list > li{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .course-illustration{
@@ -50,6 +51,7 @@ main{
 .price-container{
 	display: flex;
 	justify-content: right;
+	background-color: transparent;
 }
 
 .course-price{
@@ -62,10 +64,38 @@ main{
 	width: fit-content;
 	padding: 5px;
 	border-radius: 1em;
-	background-color: var(--dark-blue);
 	box-shadow: 2px 3px 6px 1px rgb(82, 82, 82);
 }
 
 .course-descriptor > :is(p,strong){
 	text-align: justify;
+}
+.course-descriptor{
+	margin-inline-start: .5em;
+}
+
+
+.round-portrait{
+	border-radius: 50%;
+}
+
+img{
+	max-width: 100%;
+}
+.padding-logo{
+	padding-inline: 4em;
+	padding-block: 6em;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+form *{
+	width: 100%;
+}
+input,textarea{
+	padding: 0.5em;
 }

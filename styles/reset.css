@@ -4,4 +4,9 @@
     text-align: center;
 	list-style: none;
 	box-sizing: border-box;
+	line-height: 1.7;
+}
+
+a{
+	text-decoration: none;
 }

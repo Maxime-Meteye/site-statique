@@ -1,3 +1,32 @@
-:root{
-    --color-secondary : #152237;
+
+
+.blue-theme{
+	--accent-color : #fff;
+	--background-color : var(--dark-blue);
+	background-color: var(--background-color);
 }
+.blue-theme *{
+	background-color: var(--background-color);
+	color: var(--accent-color);
+}
+
+.white-theme{
+	--accent-color : var(--dark-blue);
+	--background-color : #fff;
+	background-color: var(--background-color);
+}
+.white-theme *{
+	background-color: var(--background-color);
+	color: var(--accent-color);
+}
+
+.green-theme{
+	--accent-color : #000;
+	--background-color : #44dd8a;
+	background-color: var(--background-color);
+}
+.green-theme *{
+	background-color: var(--background-color);
+	color: var(--accent-color);
+}
+
