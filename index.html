@@ -18,16 +18,18 @@
             <a href="" class="hidden-on-mobile">Les formations <!--TODO add link--></a>
         </div>
         <div class="hidden-on-mobile"> <!--For desktop menu--></div>
-        <div class="hamburger-menu">
-            <button class="btn">Placeholder</button>
-        </div>
+        <button class="hamburger-menu">
+            <span></span>
+			<span></span>
+			<span></span>
+        </button>
     </header>
     <main>
         <section class="bg-header">
             <article>
-                <h1 class="align-center">Klivio, l'allié de votre progression</h1>
-                <h2 class="align-center">Les meilleures formations sur le développement personnel</h2>
-                <button class="btn">En savoir plus</button>
+                <h1 class="align-center blue-text">Klivio, l'allié de votre progression</h1>
+                <h2 class="align-center blue-text">Les meilleures formations sur le développement personnel</h2>
+                <button class="btn white-theme blue-text">En savoir plus</button>
             </article>
         </section>
         <section class="padding-block white-theme">
@@ -54,8 +56,28 @@
 							</div>
 						</article>
 					</li>
+					<li>
+						<article>
+							<div class="center-x">
+								<span class="course-illustration">
+									<div class="price-container">
+										<div class="course-price blue-theme">
+											<span>15,99 €</span>
+											<span class="line-through">60 €</span>
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="grid course-descriptor">
+								<p><strong>Parler en public</strong></p>
+								<p>Sonia Lefèvre | Coach prise de parole</p>
+								<div class="note-2"></div>
+								<p>Gagnez en aisance et captez votre auditoire</p>
+							</div>
+						</article>
+					</li>
 				</ul>
-				<button class="margin-auto btn blue-theme">Voir plus de formations</button>
+				<button class="margin-auto btn blue-theme mb-xl">Voir plus de formations</button>
         </section>
 		<section class="blue-theme padding-block">
 			<h4>Les formations récentes</h4>
@@ -87,12 +109,12 @@
 						</article>
 					</li>
 				</ul>
-				<button class="margin-auto btn white-theme">Voir plus de formations</button>
+				<button class="margin-auto btn white-theme mb-xl">Voir plus de formations</button>
 		</section>
 		<section class="white-theme padding-block padding-inline">
 			<h5><strong>Avis Clients</strong></h5>
 			<ul>
-				<li class="center-x">
+				<li class="center-x mt-x">
 					<figure>
 						<img src="./assets/juliette.png" alt="juliette's portrait" class="round-portrait">
 						<figcaption>Juliette</figcaption>
@@ -102,7 +124,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="white-theme padding-block padding-inline">
+		<section class="white-theme padding-block padding-inline-m">
 			<h6><strong>LES AVANTAGES KLIVIO</strong></h6>
 			<ul>
 				<li class="center-x">
@@ -128,10 +150,12 @@
 			</ul>
 			<img src="./assets/avantages.png" alt="Happy customer">
 		</section>
-		<section class="green-theme padding-block padding-inline">
-			<h6><strong>LES AVANTAGES KLIVIO</strong></h6>
+		<section class="green-theme padding-block padding-inline-s">
+			<h6 class="uppercase"><strong>Créez vos formations</strong></h6>
 			<img src="./assets/become-author.png" alt="Author writing in a book">
-			<ul>
+
+			<!--TODO Fix spacings-->
+			<ul class="padding-inline-s">
 				<li class="center-x">
 					<div class="flex">
 						<p class="justify-left">Suivi de sa progression</p>

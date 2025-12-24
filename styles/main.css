@@ -14,17 +14,46 @@ main{
 }
 
 .bg-header{
-	background: linear-gradient(to left,#44dd89aa,#2DCAB688,#15b6e2aa), no-repeat url("../assets/bg-header.png");
-	background-size: 100% 100%;
+	background: linear-gradient(to left,#44dd89aa,#2DCAB688,#15b6e2aa), url("../assets/bg-header.png");
+	background-size: contain;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	padding: 2em;
+	padding: 34px;
+	aspect-ratio: 16/9;
+}
+h1{
+	margin-top: 13px;
 }
 
+h2{
+	margin-block: 27px;
+	font-size: 20px;
+}
+
+h3{
+	margin-top: 12px;
+	font-size: 30px;
+}
+
+h4{
+	margin-top: 24px;
+	font-size: 30px;
+}
+h5{
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+h6{
+	font-size: 30px;
+	margin-bottom: 13px;
+}
 
 .course-list{
-    padding: 2em;
+    padding: 36px;
 	row-gap: 3em;
 	column-gap: 2em;
+	margin-bottom: 7px;
 }
 
 .course-list > li{
@@ -37,15 +66,15 @@ main{
 	display: block;
 	position: relative;
 	width: 305px;
-	height: 9.5em;
-	margin-bottom: 2em;
+	height: 206px;
+	margin-bottom: 21px;
 	background-color: #44dd8a;
 }
 
 .course-illustration > .price-container{
 	position: absolute;
 	bottom: -9%;
-	right: 1%;
+	right: 11px;
 }
 
 .price-container{
@@ -59,19 +88,20 @@ main{
 	flex-direction: row;
 	justify-content: right;
 	margin-right: 2em;
-	gap: 0.5em;
+	gap: 7px;
 	color: #FFF;
 	width: fit-content;
 	padding: 5px;
 	border-radius: 1em;
-	box-shadow: 2px 3px 6px 1px rgb(82, 82, 82);
+	box-shadow: 5px 4px 13.2px -1px #0004;
 }
 
 .course-descriptor > :is(p,strong){
 	text-align: justify;
+
 }
 .course-descriptor{
-	margin-inline-start: .5em;
+	margin-inline-start: 14px;
 }
 
 
