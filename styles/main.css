@@ -99,3 +99,24 @@ form *{
 input,textarea{
 	padding: 0.5em;
 }
+
+.note{
+	display: flex;
+	flex-direction: row;
+	width: 5em;
+}
+
+.full-star,.empty-star{
+	width: 1.2em;
+	height: 1.2em;
+	background-color: transparent;
+	fill: #FFC700;
+}
+.empty-star{
+	fill-opacity: 30%;
+}
+
+.spacer{
+	width: 100vw;
+	height: 1em;
+}
