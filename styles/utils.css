@@ -32,6 +32,10 @@
 	padding-inline: 16px;
 }
 
+.padding-inline-102{
+	padding-inline: 102px;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -44,6 +48,7 @@
 
 .line-through{
 	text-decoration: line-through;
+	font-size: 10px;
 }
 
 .justify-left{
@@ -58,6 +63,11 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	align-items: center;
+}
+
+.center-self-x{
+	align-self: center;
 }
 
 .margin-auto{
@@ -68,41 +78,23 @@
 	margin-bottom: 37px;
 }
 
+.mb-22{
+	margin-bottom: 22px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+.mt-30{
+	margin-top: 30px;
+}
+
 .mt-x{
 	margin-top: 26px;
 }
 
-.note-1{
-	--note-level : 1;
+.mt-m{
+	margin-top: 20px;
 }
-.note-2{
-	--note-level : 2;
-}
-.note-3{
-	--note-level : 3;
-}
-.note-4{
-	--note-level : 4;
-}
-.note-5{
-	--note-level : 5;
-}
-
-[class*="note"]{
-	position: relative;
-	width: calc(5*2em);
-	height: 1em;
-	background-color: orange;
-}
-
-[class*="note"]::after{
-	content: "";
-	display: block;
-	width: calc(var(--note-level)*2em);
-	background-color: yellow;
-	height: 1em;
-}
-
 .no-shadow{
 	box-shadow: none !important;
 }
@@ -114,7 +106,43 @@
 .padding-inline-s{
 	padding-inline: 24px;
 }
+.padding-inline-xs{
+	padding-inline: 8px;
+}
+.margin-inline-xs{
+	margin-inline: 10px;
+}
+
+.mb-16{
+	margin-bottom: 16px;
+}
+
 
 .uppercase{
 	text-transform: uppercase;
+}
+
+.gap-28px{
+	gap: 28px;
+}
+
+
+.font-size-15 *{
+	font-size: 15px;
+}
+
+.font-medium{
+	font-weight: 600;
+}
+
+.row{
+	width: 100%;
+	flex-direction: row;
+}
+
+.margin-right-16px{
+	margin-right: 16px;
+}
+.margin-right-39px{
+	margin-right: 39px;
 }

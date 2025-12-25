@@ -14,7 +14,7 @@ main{
 }
 
 .bg-header{
-	background: linear-gradient(to left,#44dd89aa,#2DCAB688,#15b6e2aa), url("../assets/bg-header.png");
+	background: linear-gradient(to right,#44DD8ABB,#15B7E2BB), url("../assets/bg-header.png");
 	background-size: contain;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -113,14 +113,14 @@ img{
 	max-width: 100%;
 }
 .padding-logo{
-	padding-inline: 4em;
-	padding-block: 6em;
+	padding-inline: 90px;
+	padding-block: 146px;
 }
 
 form{
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	gap: 20px;
 }
 
 form *{
@@ -149,4 +149,30 @@ input,textarea{
 .spacer{
 	width: 100vw;
 	height: 1em;
+}
+
+.footer-logo{
+	margin-top: 37px;
+	margin-bottom: 45px;
+	padding-inline: 67px;
+}
+
+
+.medium-icon,.large-icon{
+	width: auto;
+	height: auto;
+}
+
+
+.medium-icon{
+	min-width: 24px;
+	min-height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+}
+.large-icon{
+	min-width: 30px;
+	min-height: 30px;
+	max-width: 30px;
+	max-height: 30px;
 }
