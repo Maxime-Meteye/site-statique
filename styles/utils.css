@@ -25,11 +25,15 @@
 	border: none;
 }
 
+.large-btn{
+	width: min(356px,100%);
+}
+
 .padding-block{
-	padding-block: 8px;
+	padding-block: clamp(28px,5vw,58px);
 }
 .padding-inline{
-	padding-inline: 16px;
+	padding-inline: clamp(16px,2vw,100px);
 }
 
 .padding-inline-102{
@@ -52,7 +56,7 @@
 }
 
 .justify-left{
-	text-align: justify;
+	text-align: start;
 }
 
 .hidden-on-mobile{
@@ -61,7 +65,6 @@
 
 .center-x{
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 }
@@ -100,7 +103,7 @@
 }
 
 .padding-inline-m{
-	padding-inline: 32px;
+	padding-inline: clamp(32px,8vw,98px);
 }
 
 .padding-inline-s{
@@ -117,6 +120,9 @@
 	margin-bottom: 16px;
 }
 
+.padding-block-m{
+	padding-block: 32px;
+}
 
 .uppercase{
 	text-transform: uppercase;
@@ -126,13 +132,31 @@
 	gap: 28px;
 }
 
+.gap-1em{
+	gap: 1em;
+}
 
-.font-size-15 *{
+
+.font-size-15, .font-size-15 *{
 	font-size: 15px;
+}
+
+.font-size-24,.font-size-24 *{
+	font-size: 24px;
+}
+
+.font-size-20,.font-size-20 *{
+	font-size: 20px;
 }
 
 .font-medium{
 	font-weight: 600;
+}
+.font-small{
+	font-weight: 500;
+}
+.font-black{
+	font-weight: 900;
 }
 
 .row{
@@ -145,4 +169,35 @@
 }
 .margin-right-39px{
 	margin-right: 39px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.wrappable{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+
+
+.mr-auto-on-children > *{
+	margin-right: auto;
+}
+
+.space-between{
+	justify-content: space-between;
+}
+
+
+
+
+@media (width > 1600px){
+	.wrappable > * {
+		width: min(50%);
+	}
 }

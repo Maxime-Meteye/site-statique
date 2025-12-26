@@ -21,7 +21,8 @@
 }
 
 .white-theme :is(.large-icon, .medium-icon){
-	fill: #44DD8A;
+	--color :#44DD8A;
+	fill: var(--color);
 }
 
 
@@ -38,13 +39,19 @@
 
 
 :is(.green-theme, .blue-theme) :is(.large-icon, .medium-icon){
-	fill: #fff;
+	--color: #fff;
+	fill: var(--color);
+}
+
+.hollow-icon{
+	fill: #fff0 !important;
+	stroke-width: 32px;
+	stroke: var(--color) !important;
 }
 
 
-
 .green-theme.btn{
-	color:#152237;;
+	color:#152237;
 }
 
 .gradient{

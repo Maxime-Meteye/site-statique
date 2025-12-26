@@ -6,11 +6,15 @@
 @import url("./utils.css");
 
 
-
+/*
 main{
     display: flex;
-    width: 100vw;
     flex-direction: column;
+}
+*/
+
+header,footer,main{
+	width: 100vw;
 }
 
 .bg-header{
@@ -18,35 +22,56 @@ main{
 	background-size: contain;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	padding: 34px;
+	padding: 16px 16px 34px 16px;
 	aspect-ratio: 16/9;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
 }
+
+.bg-header article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 h1{
+	text-transform: uppercase;
 	margin-top: 13px;
+	line-height: 40px;
+	font-weight: 800;
+	font-size: clamp(32px,3vw,48px);
 }
 
 h2{
+	text-transform: uppercase;
 	margin-block: 27px;
 	font-size: 20px;
 }
 
 h3{
-	margin-top: 12px;
+	margin-top: 30px;
 	font-size: 30px;
+	font-weight: 800;
 }
 
 h4{
 	margin-top: 24px;
 	font-size: 30px;
+	line-height: 40px;
 }
 h5{
-	margin-top: 20px;
 	font-size: 30px;
+	text-transform: uppercase;
 }
 
 h6{
+
 	font-size: 30px;
 	margin-bottom: 13px;
+	line-height: 36px;
 }
 
 .course-list{
@@ -54,16 +79,20 @@ h6{
 	row-gap: 3em;
 	column-gap: 2em;
 	margin-bottom: 7px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .course-list > li{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 305px;
 }
 
 .course-illustration{
-	display: block;
 	position: relative;
 	width: 305px;
 	height: 206px;
@@ -74,7 +103,7 @@ h6{
 .course-illustration > .price-container{
 	position: absolute;
 	bottom: -9%;
-	right: 11px;
+	right: -11px;
 }
 
 .price-container{
@@ -91,27 +120,55 @@ h6{
 	gap: 7px;
 	color: #FFF;
 	width: fit-content;
-	padding: 5px;
-	border-radius: 1em;
+	padding: 6px 11px;
+	border-radius: 2em;
 	box-shadow: 5px 4px 13.2px -1px #0004;
 }
 
+.course-price :nth-child(1){
+	font-size: 20px;
+}
+.course-price :nth-child(2){
+	font-size: 10px;
+}
+
 .course-descriptor > :is(p,strong){
-	text-align: justify;
+	text-align: start;
 
 }
 .course-descriptor{
 	margin-inline-start: 14px;
 }
 
+.course-descriptor :nth-child(1){
+	font-size: 24px;
+	line-height: 2em;
+}
+
 
 .round-portrait{
 	border-radius: 50%;
+	margin-bottom: 8px;
+}
+figcaption{
+	margin-bottom: 5px;
 }
 
 img{
 	max-width: 100%;
 }
+
+.customer-feedback{
+	max-width: 41em;
+}
+
+.customer-feedback p{
+	line-height: 30px;
+	font-size: 16px;
+}
+
+
+
 .padding-logo{
 	padding-inline: 90px;
 	padding-block: 146px;
@@ -130,20 +187,20 @@ input,textarea{
 	padding: 0.5em;
 }
 
+input{
+	max-width: min(100%, 600px);
+}
+
+form{
+	align-self: center;
+}
+
 .note{
 	display: flex;
 	flex-direction: row;
-	width: 5em;
-}
-
-.full-star,.empty-star{
-	width: 1.2em;
-	height: 1.2em;
-	background-color: transparent;
-	fill: #FFC700;
-}
-.empty-star{
-	fill-opacity: 30%;
+	width: 120px;
+	gap: 4px;
+	margin-block: 8px;
 }
 
 .spacer{
@@ -175,4 +232,37 @@ input,textarea{
 	min-height: 30px;
 	max-width: 30px;
 	max-height: 30px;
+}
+
+.full-star,.empty-star{
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	fill: #FFC700;
+}
+
+.empty-star{
+	fill-opacity: 30%;
+}
+
+
+
+@media (width > 1600px){
+	form{
+		padding-inline: 10em;
+	}
+	h3,h4,h6{
+		text-align: start;
+	}
+
+	h6{
+		margin-bottom: 43px;
+	}
+
+	.courses-container{
+		padding-inline: clamp(16px,2vw,100px);
+	}
+	.customer-container{
+		margin-right: auto;
+	}
 }
