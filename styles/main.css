@@ -94,7 +94,7 @@ h6{
 
 .course-illustration{
 	position: relative;
-	width: 305px;
+	width: min(80vw,305px);
 	height: 206px;
 	margin-bottom: 21px;
 	background-color: #44dd8a;
@@ -208,12 +208,6 @@ form{
 	height: 1em;
 }
 
-.footer-logo{
-	margin-top: 37px;
-	margin-bottom: 45px;
-	padding-inline: 67px;
-}
-
 
 .medium-icon,.large-icon{
 	width: auto;
@@ -257,6 +251,10 @@ form{
 
 	h6{
 		margin-bottom: 43px;
+	}
+
+	.center-text{
+		text-align: center;
 	}
 
 	.courses-container{
