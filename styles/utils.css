@@ -203,13 +203,13 @@
 
 
 
-@media(width < 1600px) {
+@media(width < 1300px) {
 	.hidden-on-mobile{
     	display: none !important;
 	}	
 }
 
-@media (width > 1600px){
+@media (width > 1300px){
 	.row-widescreen{
 		flex-direction: row;
 		display: flex;

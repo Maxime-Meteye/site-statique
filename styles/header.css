@@ -63,7 +63,7 @@ header :is(.medium-icon,.large-icon){
 }
 
 
-@media(width > 1600px){
+@media(width > 1300px){
 	.hamburger-menu{
 		display: none;
 	}
