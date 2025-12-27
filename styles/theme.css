@@ -21,7 +21,7 @@
 }
 
 .white-theme :is(.large-icon, .medium-icon){
-	--color :#44DD8A;
+	--color :var(--electric-green);
 	fill: var(--color);
 }
 
@@ -29,7 +29,7 @@
 
 .green-theme{
 	--accent-color : rgb(0,0,0,80%);
-	--background-color : #44dd8a;
+	--background-color : var(--electric-green);
 	background-color: var(--background-color);
 }
 .green-theme *{
@@ -51,9 +51,9 @@
 
 
 .green-theme.btn{
-	color:#152237;
+	color:var(--dark-blue);
 }
 
 .gradient{
-	background: linear-gradient(to right,#44DD8A,#18A0FB);
+	background: linear-gradient(to right,var(--electric-green),#18A0FB);
 }

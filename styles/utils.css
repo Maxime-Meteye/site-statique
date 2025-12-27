@@ -1,18 +1,5 @@
-.alternate-color:nth-child(odd){
-    background-color: red;
-}
-
-.alternate-color:nth-child(even){
-    background-color: blue;
-}
-
-.alternate-color{
-    height: 10em;
-    width: 100%;
-}
-
 .blue-text{
-	color: #152237;
+	color: var(--dark-blue);
 }
 
 .btn{
@@ -199,7 +186,7 @@
 }
 
 .green-border{
-	border-top: solid 2px #44DD8A;
+	border-top: solid 2px var(--electric-green);
 }
 
 .flex-right{

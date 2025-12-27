@@ -5,21 +5,12 @@
 @import url("./header.css");
 @import url("./utils.css");
 
-
-/*
-main{
-    display: flex;
-    flex-direction: column;
-}
-*/
-
 header,footer,main{
 	width: 100vw;
 }
 
 .bg-header{
 	background: linear-gradient(to right,#44DD8ABB,#15B7E2BB), url("../assets/bg-header.png");
-	background-size: contain;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	padding: 16px 16px 34px 16px;
@@ -28,6 +19,7 @@ header,footer,main{
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
+	max-height: 450px;
 }
 
 .bg-header article{
@@ -236,7 +228,7 @@ form{
 }
 
 .empty-star{
-	fill-opacity: 30%;
+	fill-opacity: 0.3;
 }
 
 
