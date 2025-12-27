@@ -94,7 +94,7 @@ h6{
 
 .course-illustration{
 	position: relative;
-	width: min(80vw,305px);
+	width: max(100%,305px);
 	height: 206px;
 	margin-bottom: 21px;
 	background-color: #44dd8a;
@@ -180,7 +180,7 @@ form{
 	gap: 20px;
 }
 
-form *{
+.contact-form *{
 	width: 100%;
 }
 input,textarea{
@@ -242,8 +242,8 @@ form{
 
 
 @media (width > 1600px){
-	form{
-		padding-inline: 10em;
+	.contact-form{
+		padding-inline: 7em;
 	}
 	h3,h4,h6{
 		text-align: start;

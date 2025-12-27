@@ -180,11 +180,6 @@
 	justify-content: center;
 }
 
-.max-width-50{
-	max-width: 50%;
-}
-
-
 .mr-auto-on-children > *{
 	margin-right: auto;
 }
@@ -215,6 +210,10 @@
 	line-height: 2;
 }
 
+.space-evenly{
+	justify-content: space-evenly;
+}
+
 
 
 @media(width < 1600px) {
@@ -237,4 +236,9 @@
 	.hidden-on-mobile{
 		display: flex;
 	}
+
+	.max-width-50-widescreen{
+		max-width: 50%;
+	}
+
 }
