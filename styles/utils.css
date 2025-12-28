@@ -224,8 +224,13 @@
 		display: flex;
 	}
 
+	.two-cols-on-widescreen > *{
+		max-width: 50%;
+	}
+
 	.max-width-50-widescreen{
 		max-width: 50%;
 	}
 
+	
 }

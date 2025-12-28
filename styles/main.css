@@ -172,9 +172,18 @@ form{
 	gap: 20px;
 }
 
-.contact-form *{
+.contact-form > *{
 	width: 100%;
 }
+
+.contact-form > *{
+	flex-direction: column;
+}
+
+.contact-form input{
+	width: 100%;
+}
+
 input,textarea{
 	padding: 0.5em;
 }
@@ -254,5 +263,13 @@ form{
 	}
 	.customer-container{
 		margin-right: auto;
+	}
+
+	.contact-form div{
+		flex-direction: row;
+	}
+
+	.contact-form input{
+		width: 50%;
 	}
 }
